@@ -6,7 +6,7 @@ const DashboardLayout = () => {
     <div className='dashboardLayout'>
         <div className="menu">MENU</div>
         <div className="content">
-            <Outlet/>
+            <Outlet />
         </div>
     </div>
   );
