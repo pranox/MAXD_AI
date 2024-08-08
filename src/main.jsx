@@ -7,6 +7,7 @@ import DashboardPage from './routes/dashboardPage/DashboardPage';
 import ChatPage from './routes/chatPage/ChatPage';
 import RootLayout from './layouts/rootLayout/RootLayout';
 import DashboardLayout from './layouts/dashboardLayout/DashboardLayout';
+import Chatpage from './routes/chatPage/ChatPage';
 
 
 const router = createBrowserRouter([
@@ -22,14 +23,14 @@ const router = createBrowserRouter([
         children:[
           {
              path:"/dashboard",
-            element: <DashboardPage />
+            element: <DashboardPage />,
           },
           {
             path:"/dashboard/chats/:id",
-           element: <ChatPage/>
-         }
-        ]
-      }
+           element: <Chatpage />,
+         },
+        ],
+      },
     ],
   },
   
